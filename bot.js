@@ -15,7 +15,7 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
    if (message === "boobsorbutts") {
 		var rollDie = getRandomizer( 1, 8 );
 		var results = "";
-		results += rollDie;
+		results = rollDie;
 		
 		if (results === 1){
 		   sendFiles(channelID, ["1.png"]);
